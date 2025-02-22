@@ -63,6 +63,8 @@ if (env === 'development') {
   app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });
+} else {
+  console.log('Prod');
 }
 
 module.exports = app;
