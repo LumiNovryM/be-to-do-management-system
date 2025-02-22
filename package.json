@@ -8,8 +8,9 @@
   },
   "scripts": {
     "dev": "nodemon -w ./*.js ./*.js",
-    "start": "npx prisma db push && npx prisma generate && node ./bin/www",
-    "prepare": "husky"
+    "start": "node ./bin/www",
+    "prepare": "husky",
+    "vercel-build": "npx prisma db push && npx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.3.0",
